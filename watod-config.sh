@@ -1,3 +1,7 @@
+ACTIVE_MODULES="robot gazebo vis_tools"
+
+
+
 ## ----------------------- watod Configuration File Override ----------------------------
 
 ##
