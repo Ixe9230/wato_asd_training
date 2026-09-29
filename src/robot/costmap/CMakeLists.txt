@@ -12,6 +12,8 @@ endif()
 find_package(ament_cmake REQUIRED)
 find_package(rclcpp REQUIRED)
 find_package(std_msgs REQUIRED)
+find_package(sensor_msgs REQUIRED)
+find_package(nav_msgs REQUIRED)
 
 add_library(costmap_lib
   src/costmap_core.cpp)
@@ -20,6 +22,8 @@ target_include_directories(costmap_lib
 ament_target_dependencies(costmap_lib 
   rclcpp
   std_msgs
+  sensor_msgs
+  nav_msgs
 )
 
 add_executable(costmap_node src/costmap_node.cpp)
